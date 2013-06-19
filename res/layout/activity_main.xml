@@ -1,0 +1,68 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:paddingTop="25dp"
+    tools:context=".MainActivity" >
+
+    <Button
+        android:id="@+id/bRClick"
+        android:layout_width="130dp"
+        android:layout_height="170dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="RClick"
+         />
+    
+
+    <Button
+        android:id="@+id/bLClick"
+        android:layout_width="130dp"
+        android:layout_height="170dp"
+        android:layout_alignBaseline="@+id/bRClick"
+        android:layout_alignBottom="@+id/bRClick"
+        android:layout_alignParentLeft="true"
+        android:text="LClick"></Button>
+
+    <Button
+        android:id="@+id/bScrollUp"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="50dp"
+        android:layout_centerInParent="true"
+        android:layout_height="85dp"
+        android:layout_alignTop="@+id/bRClick"
+        android:layout_toRightOf="@+id/bLClick"
+        android:text="Up" />
+
+    <Button
+        android:id="@+id/bScrollDown"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="50dp"
+        android:layout_centerInParent="true"
+        android:layout_height="85dp"
+        android:layout_alignBottom="@+id/bRClick"
+        android:layout_alignLeft="@+id/bScrollUp"
+        android:text="Down" />
+
+    <TextView
+        android:id="@+id/tvStats"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:text="Accelerometer Stats"
+        android:textSize="25dp" />
+
+    
+
+    <Button
+        android:id="@+id/bConnect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/bRClick"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/bRClick"
+        android:text="Connect" />
+
+</RelativeLayout>
